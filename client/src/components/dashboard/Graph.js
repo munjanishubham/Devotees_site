@@ -97,21 +97,21 @@ const Graph = ({patient}) => {
                     label: "level of patients",
                     data: patientData,
                     borderColor: [
-                        "#17a2b8"
+                        "#FF9933"
                     ],
                     pointBorderColor: [
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
-                        "#17a2b8",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
+                        "#FF9933",
                     ],
                     borderWidth: 3
                 }
