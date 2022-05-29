@@ -131,7 +131,7 @@ h5 {
 }
 
 .profile-p {
-    color: #738f93;
+    color: #FFFDFA;
     font-family: 'Prata', serif;
 }
 .profile-p2 {
@@ -362,7 +362,7 @@ h5 {
     "profile-img profile-details profile-buttons"
     ;
     grid-column-gap: 10px;
-    background-color: lightgray;
+    background-color: #ff9933;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     overflow: auto;

@@ -17,8 +17,8 @@ const Landing = ({isPanditAuthenticated, isUserAuthenticated}) => {
             <section id="landing">
                 <div className="container">
                     <div className="heading">
-                        <h1 className="main-heading">Find Your Best Pandit &</h1>
-                        <h1 className="main-heading">Book Your <span className="main-span">Appointment.</span></h1>
+                        <h1 className="main-heading">Aapki Puja Hamare Saath</h1>
+                        <h2 className="main-heading">Book Your <span className="main-span">Appointment.</span></h2>
                     </div>
                     <div className="signup">
                         <div className="pandit-signup">
@@ -35,7 +35,7 @@ const Landing = ({isPanditAuthenticated, isUserAuthenticated}) => {
                     <br />
                     <div className="img">
                         <div className="img-1">
-                            <img src={require("../../img/undraw_pandit_kw5l.svg")}  />
+                            <img src={require("../../img/temple.svg")}  />
                         </div>
                     </div>
                 </div>

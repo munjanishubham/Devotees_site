@@ -17,7 +17,7 @@ const Navbar = (
         const authUserLinks = (
             <Fragment>
                 <Link className="nav-logo" to="/appointment">
-                Cure<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./pandit (1).png")} />       
+                Devotee's Site<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./pandit (1).png")} />       
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -45,7 +45,7 @@ const Navbar = (
         const authPanditLinks = (
             <Fragment>
                 <Link className="nav-logo" to="/dashboard">
-                Cure<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./pandit (1).png")} />       
+                Devotee's Site<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./pandit (1).png")} />       
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -82,7 +82,7 @@ const Navbar = (
         const guestLinks = (
             <Fragment>
                 <Link className="nav-logo" to="/">
-                    Cure<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./pandit (1).png")} />       
+                    Devotee's Site<img className="nav-log-img" style={{width: "3.2rem"}} src={require("./pandit (1).png")} />       
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">

@@ -92,7 +92,7 @@ const UserRegister = ({ setAlert, register, isUserAuthenticated }) => {
                             </form>
                         </div>
                         <div className="img-side">
-                            <img className="register-user" src={require("../../img/undraw_forms_78yw.svg")} alt="" />
+                            <img className="register-user" src={require("../../img/diya.svg")} alt="" />
                         </div>
                     </div>
                 </div>

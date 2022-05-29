@@ -54,7 +54,7 @@ const ProfileTop = ({profile: {
                 </div>    
             </div>   
             <div className="top-profile-img">
-                <img src={require("../../img/pandit4.svg")} />
+                <img src={require("../../img/pujari.svg")} />
             </div>   
         </div>
     )

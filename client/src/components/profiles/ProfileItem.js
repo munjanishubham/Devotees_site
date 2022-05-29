@@ -26,7 +26,7 @@ const ProfileItem = ({
                             <h2 className="profile-heading"><strong>{name}</strong></h2>
                             <p className="profile-p"><strong>{specialists}</strong> </p>
                             <p className="profile-p2"><strong>{clinic}</strong> {location}</p>
-                            <p className="profile-p2"><strong>{ruppess}</strong> Consultation fee at clinic</p>
+                            <p className="profile-p2"><strong>{ruppess}</strong> Consultation fee</p>
                         </div>
                     </div>
                     <div className="mx-auto profile-buttons">
