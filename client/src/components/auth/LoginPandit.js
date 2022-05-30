@@ -68,7 +68,7 @@ const LoginPandit = ({ login, isPanditAuthenticated }) => {
                             </form>
                         </div>
                         <div className="img-side">
-                            <img src={require("../../img/ganesh.svg")} alt="" className="register-user" />
+                            <img src={require("../../img/panditnew.svg")} alt="" className="register-user" />
                         </div>
                     </div>
                 </div>
