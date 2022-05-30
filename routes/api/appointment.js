@@ -18,7 +18,7 @@ router.post('/:pandit_id', [authUser,
         check('devoteename', 'Devotee name is required')
             .not()
             .isEmpty(),
-        check('fathername', 'Father name is required')
+        check('location', 'Location is required')
             .not()
             .isEmpty(),
         check('age', 'Age is required')
@@ -68,7 +68,7 @@ router.post('/:pandit_id', [authUser,
         const newDevotee = {
             bookingId: appointmentId,
             devoteename: req.body.devoteename,
-            fathername: req.body.fathername,
+            location: req.body.location,
             status: req.body.status,
             age: req.body.age,
             date: req.body.date,
@@ -81,7 +81,7 @@ router.post('/:pandit_id', [authUser,
         const newAppointment = {
             bookingId: appointmentId,
             devoteename: req.body.devoteename,
-            fathername: req.body.fathername,
+            location: req.body.location,
             status: req.body.status,
             age: req.body.age,
             date: req.body.date,

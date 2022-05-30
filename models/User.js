@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema({
                 type: String,
                 required: true
             },
-            fathername: {
+            location: {
                 type: String,
             },
             status: {

@@ -9,7 +9,7 @@ const Form = ({profile, panditId,history, addAppointment}) => {
 
     const [formData, setFormData] = useState({
         devoteename: '',
-        fathername: '',
+        location: '',
         age:'',
         status:'',
         date:'',
@@ -18,7 +18,7 @@ const Form = ({profile, panditId,history, addAppointment}) => {
 
     const {
         devoteename,
-        fathername,
+        location,
         age,
         status,
         date,
@@ -61,9 +61,9 @@ const Form = ({profile, panditId,history, addAppointment}) => {
                 <input
                     type="text" 
                     className="form-control" 
-                    placeholder="* Father name"
-                    name="fathername" 
-                    value={fathername} 
+                    placeholder="* Location name"
+                    name="location" 
+                    value={location} 
                     onChange={e => onChange(e)} />
                 </div>                    
                 <div className="form-group">
@@ -97,12 +97,12 @@ const Form = ({profile, panditId,history, addAppointment}) => {
                 <div className="form-group">
                     <textarea 
                         className="form-control" 
-                        placeholder="* Health Problem Description" 
+                        placeholder="*Description of Puja" 
                         name="description" 
                         value={description}
                         onChange={e => onChange(e)}
                         ></textarea>
-                    <small className="form-text">Tell us about the Health Problem.</small>
+                    <small className="form-text">Tell us Description of Puja.</small>
                 </div>
                 <input type="submit" value="Submit" className="btn btn-info" />{' '}
                 <Link to="/profiles" type="submit" className="btn btn-outline-secondary">Go Back</Link>
