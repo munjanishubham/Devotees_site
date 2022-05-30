@@ -99,7 +99,7 @@ const Navbar = (
                             </Link>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <Link className="dropdown-item" to="/loginUser"><i className="fas fa-users"></i> Login as User</Link>
-                                <Link className="dropdown-item" to="/loginPandit"><i className="fas fa-user-md"></i> Login as Pandit</Link>
+                                <Link className="dropdown-item" to="/loginPandit"><i className="fa-solid fa-hands-praying"></i> Login as Pandit</Link>
                             </div>
                         </li>
                     <li className="nav-item dropdown active">
@@ -108,7 +108,7 @@ const Navbar = (
                             </Link>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <Link className="dropdown-item" to="/registerUser"><i className="fas fa-users"></i> Register as User</Link>
-                                <Link className="dropdown-item" to="/registerPandit"><i className="fas fa-user-md"></i> Register as Pandit</Link>
+                                <Link className="dropdown-item" to="/registerPandit"><i className="fa-solid fa-hands-praying"></i> Register as Pandit</Link>
                             </div>
                         </li>
                 </ul>

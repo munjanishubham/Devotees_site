@@ -39,7 +39,7 @@ const PanditRegister = ({ setAlert, register, isPanditAuthenticated }) => {
                         <div className="form-side">
                             <div className="heading-common">
                             <h1><strong>Pandit</strong>
-                                <i className="fas fa-user-md"></i>
+                                <i className="fa-solid fa-hands-praying"></i>
                             </h1>
                             </div>
                             <form onSubmit={e => onSubmit(e)}>
@@ -92,7 +92,7 @@ const PanditRegister = ({ setAlert, register, isPanditAuthenticated }) => {
                             </form>
                         </div>
                         <div className="img-side">
-                            <img className="register-user" src={require("../../img/newPandit1.svg")} alt="" />
+                            <img className="register-user" src={require("../../img/krishna.svg")} alt="" />
                         </div>
                     </div>
                 </div>

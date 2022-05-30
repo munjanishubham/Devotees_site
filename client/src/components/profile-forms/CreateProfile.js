@@ -251,7 +251,7 @@ const CreateProfile = ({ createProfile, history }) => {
             </div>
             <div className="img-side">
               <img
-                src={require("../../img/mention.svg")}
+                src={require("../../img/diya2.svg")}
                 alt=""
                 className="register-user"
               />

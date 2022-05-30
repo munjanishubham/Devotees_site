@@ -20,7 +20,7 @@ const Profiles = ({getProfiles, profile: { profiles,loading }}) => {
                         <div className="heading-common">
                             <h1><strong>Pandit Profiles</strong></h1>  
                         </div>
-                        <h2 className="welcome-heading"><i className="fas fa-user-md"></i> Book your Appointments</h2>
+                        <h2 className="welcome-heading"><i className="fa-solid fa-hands-praying"></i> Book your Appointments</h2>
                         <br />
                         {
                             profiles != null ? (
