@@ -234,20 +234,8 @@ const Edit = ({
                             <i className="fab fa-facebook"></i>
                           </span>
                         </div>
-                        <input
-                          type="text"
-                          className="form-control form-control-lg"
-                          placeholder="Facebook Profile URL"
-                          name="facebook"
-                          value={facebook}
-                          onChange={(e) => onChange(e)}
-                        />
-                      </div>
-                      <div className="input-group mb-3">
-                        <div className="input-group-prepend">
-                          <span className="input-group-text">
-                            <i className="fab fa-youtube"></i>
-                          </span>
+                        <div className="img-side">
+                            <img src={require("../../img/ganesh.svg")} alt="" className="register-user" />
                         </div>
                         <input
                           type="text"
