@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema({
             bookingId: {
                 type: Number
             },
-            patientname: {
+            devoteename: {
                 type: String,
                 required: true
             },

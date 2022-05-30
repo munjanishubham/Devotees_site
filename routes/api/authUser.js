@@ -102,11 +102,11 @@ router.delete('/:appointment_id', authUser, async (req, res) => {
         await user.save();
         
         if(profile !== null) {
-            const indexPandit = profile.patients
+            const indexPandit = profile.devotees
                 .map(item => item.bookingId)
                 .indexOf(removeIndex);
             
-            profile.patients.splice(indexPandit, 1);
+            profile.devotees.splice(indexPandit, 1);
     
             await profile.save();
 

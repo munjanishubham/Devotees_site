@@ -4,7 +4,7 @@ import Moment from 'react-moment';
 import {connect} from 'react-redux';
 import Graph from './Graph';
 
-const Review = ({review, patient}) => {
+const Review = ({review, devotee}) => {
     const reviews = review.map(rev => (
         <div className="card">
             <img className="card-img-top" src={rev.avatar} alt="Card image cap" />
@@ -33,7 +33,7 @@ const Review = ({review, patient}) => {
                     <h2 className="credentials"><strong>Total Appointments</strong></h2>
                     <br />
                     <div id="graph">
-                        <Graph patient={patient} />
+                        <Graph devotee={devotee} />
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ const Review = ({review, patient}) => {
 };
 
 Review.propTypes = {
-    patient: PropTypes.array.isRequired,
+    devotee: PropTypes.array.isRequired,
 }
 
 export default connect(null)(Review);

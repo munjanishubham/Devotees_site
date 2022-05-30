@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Form = ({profile, panditId,history, addAppointment}) => {
 
     const [formData, setFormData] = useState({
-        patientname: '',
+        devoteename: '',
         fathername: '',
         age:'',
         status:'',
@@ -17,7 +17,7 @@ const Form = ({profile, panditId,history, addAppointment}) => {
     });   
 
     const {
-        patientname,
+        devoteename,
         fathername,
         age,
         status,
@@ -52,9 +52,9 @@ const Form = ({profile, panditId,history, addAppointment}) => {
                 <input 
                     type="text" 
                     className="form-control" 
-                    placeholder="* Patient name"
-                    name="patientname"
-                    value={patientname}
+                    placeholder="* Devotee name"
+                    name="devoteename"
+                    value={devoteename}
                     onChange={e => onChange(e)} />
                 </div>
                 <div className="form-group">

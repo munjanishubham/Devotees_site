@@ -6,7 +6,7 @@ const ProfileSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'pandit'
     },
-    clinic: {
+    language: {
         type: String
     },
     website: {
@@ -23,16 +23,16 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    specialists: {
-        type: String
-    },
+    // specialists: {
+    //     type: String
+    // },
     ruppess: {
         type: String
     },
     bio: {
         type: String
     },
-    patients: [
+    devotees: [
       {
         user: {
           type: Schema.Types.ObjectId,
@@ -41,7 +41,7 @@ const ProfileSchema = new mongoose.Schema({
         bookingId: {
           type: Number
         },
-        patientname: {
+        devoteename: {
             type: String,
             required: true
         },

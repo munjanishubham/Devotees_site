@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 const ProfileItem = ({
     profile: {
         pandit: {_id, name, avatar },
-        clinic,
+        language,
         location,
         specialists,
         ruppess
@@ -24,8 +24,8 @@ const ProfileItem = ({
                     <div className="profile-details">
                         <div className="profile-desc">
                             <h2 className="profile-heading"><strong>{name}</strong></h2>
-                            <p className="profile-p"><strong>{specialists}</strong> </p>
-                            <p className="profile-p2"><strong>{clinic}</strong> {location}</p>
+                            {/* <p className="profile-p"><strong>{specialists}</strong> </p> */}
+                            <p className="profile-p2"><strong>{language}</strong> {location}</p>
                             <p className="profile-p2"><strong>{ruppess}</strong> Consultation fee</p>
                         </div>
                     </div>

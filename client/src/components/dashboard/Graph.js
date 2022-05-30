@@ -2,11 +2,11 @@ import React, {Fragment, useState, useEffect} from 'react';
 import {Line, Bar} from 'react-chartjs-2';
 import PropTypes from 'prop-types';
 
-const Graph = ({patient}) => {
+const Graph = ({devotee}) => {
     const [chartData, setChartData] = useState([]);
 
     const chart = () => {
-        const patientData = [];
+        const devoteeData = [];
         const jan = [0];
         const feb = [0];
         const mar = [0];
@@ -20,7 +20,7 @@ const Graph = ({patient}) => {
         const nov = [0];
         const dec = [0];
     
-        patient.forEach(pat => {
+        devotee.forEach(pat => {
             if(new Date(pat.date).getMonth() === 0) {
                 return jan.push(jan[0]+1);
             } else if(new Date(pat.date).getMonth() === 1) {
@@ -62,20 +62,20 @@ const Graph = ({patient}) => {
         var novData = nov.reduce( (a, b) => a+b, nov[0]);
         var decData = dec.reduce( (a, b) => a+b, dec[0]);
     
-        patientData.push(janData);
-        patientData.push(febData);
-        patientData.push(marData);
-        patientData.push(aprData);
-        patientData.push(mayData);
-        patientData.push(junData);
-        patientData.push(julData);
-        patientData.push(augData);
-        patientData.push(sepData);
-        patientData.push(octData);
-        patientData.push(novData);
-        patientData.push(decData);
+        devoteeData.push(janData);
+        devoteeData.push(febData);
+        devoteeData.push(marData);
+        devoteeData.push(aprData);
+        devoteeData.push(mayData);
+        devoteeData.push(junData);
+        devoteeData.push(julData);
+        devoteeData.push(augData);
+        devoteeData.push(sepData);
+        devoteeData.push(octData);
+        devoteeData.push(novData);
+        devoteeData.push(decData);
     
-        console.log(patientData);
+        console.log(devoteeData);
     
         setChartData({
             labels: [
@@ -94,8 +94,8 @@ const Graph = ({patient}) => {
                 ],
             datasets: [
                 {
-                    label: "level of patients",
-                    data: patientData,
+                    label: "level of devotees",
+                    data: devoteeData,
                     borderColor: [
                         "#FF9933"
                     ],
@@ -162,7 +162,7 @@ const Graph = ({patient}) => {
 };
 
 Graph.propTypes = {
-    patient: PropTypes.array.isRequired,
+    devotee: PropTypes.array.isRequired,
 }
 
 export default Graph;

@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import Spinner from '../layout/Spinner';
 import Experience from './Experience';
 import Education from './Education';
-import Patient from './Patient';
+import Devotee from './Devotee';
 import Review from './Review';
 import {getCurrentProfile, deleteAccount} from '../../actions/profile';
 import {Link} from 'react-router-dom';
@@ -28,19 +28,19 @@ const Dashboard = ({
                     <div className="container">
                         <div className="heading-common">
                             <h1><strong>Dashboard</strong></h1>
-                            <h2 className="welcome-heading"><i className="fas fa-user-md"></i> Welcome {pandit && pandit.name}</h2>
+                            <h2 className="welcome-heading"><i class="fa-solid fa-hands-praying"></i> Welcome {pandit && pandit.name}</h2>
                         </div>
                         <br />
                         {profile !== null ? (
                             <Fragment>
-                                {profile.patients !== null && profile.patients.length > 0 ? 
+                                {profile.devotees !== null && profile.devotees.length > 0 ? 
                                     (
-                                        <Patient patient={profile.patients} />
+                                        <Devotee devotee={profile.devotees} />
                                     ) : (
                                         <h5 style={{color: "#738f93"}}>No Appointments yet..</h5>
                                     )
                                 }
-                                <Review patient={profile.patients} review={profile.review} />
+                                <Review devotee={profile.devotees} review={profile.review} />
                                 <Experience experience={profile.experience} />
                                 <Education education={profile.education} />
                                 <button 

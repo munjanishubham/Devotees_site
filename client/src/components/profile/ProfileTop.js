@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 const ProfileTop = ({profile: {
     pandit: { name, avatar },
-        clinic,
+        language,
         location,
-        specialists,
+        // specialists,
         ruppess,
         website,
         social
@@ -20,9 +20,9 @@ const ProfileTop = ({profile: {
                 <div className="details">
                     <h2 className="profile-top-heading"><strong>{name}</strong></h2>
                     <br />
-                    <h3 className="profile-top-desc">{specialists}</h3>
-                    <br />
-                    <p className="profile-top-p">{clinic}, {location}</p>
+                    {/* <h3 className="profile-top-desc">{specialists}</h3>
+                    <br /> */}
+                    <p className="profile-top-p">{language}, {location}</p>
                     <p className="fee"><strong>{ruppess} </strong>Consultation Fee</p>
                     <div className="logos">
                         {website && (

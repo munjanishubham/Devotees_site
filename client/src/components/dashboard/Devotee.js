@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 import {connect} from 'react-redux';
 
-const Patient = ({patient}) => {
+const Devotee = ({devotee}) => {
 
     const [value,setValue] = useState([]);
 
-    const modalBody = patient.map(pat => (
+    const modalBody = devotee.map(pat => (
         <Fragment key={pat._id}>
-            <h2 className="style-heading"><strong>{pat.patientname}</strong></h2>
+            <h2 className="style-heading"><strong>{pat.devoteename}</strong></h2>
             <p className="profile-p"><strong>Father's name: {pat.fathername}</strong></p>
             <p className="profile-p2"><strong>Age: </strong>{pat.age}</p>
             <p className="profile-p2"><strong>Status: </strong>{pat.status}</p>
@@ -17,10 +17,10 @@ const Patient = ({patient}) => {
             <p className="profile-p2"><strong>Booking ID: </strong>{pat.bookingId}</p>
         </Fragment>
     ));
-    const patients = patient.map(ptn => (
+    const devotees = devotee.map(ptn => (
         <tr key={ptn._id}>
             <td>{ptn.bookingId}</td>
-            <td>{ptn.patientname}</td>
+            <td>{ptn.devoteename}</td>
             <td>
                 <Moment format='DD/MM/YYYY'>{ptn.date}</Moment>
             </td>
@@ -36,7 +36,7 @@ const Patient = ({patient}) => {
                     <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Patient Details</h5>
+                                <h5 className="modal-title" id="exampleModalLabel">Devotee Details</h5>
                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -71,7 +71,7 @@ const Patient = ({patient}) => {
     return (
         <Fragment>
             <div className="common-details">
-                <h2 className="credentials"><strong>Patient Credentials</strong></h2>
+                <h2 className="credentials"><strong>Devotee Credentials</strong></h2>
                     <br />
                     <div className="common-table">
                         <div className="scroll-table">
@@ -79,13 +79,13 @@ const Patient = ({patient}) => {
                                 <thead>
                                     <tr>
                                         <th>Booking ID</th>
-                                        <th>Patient's Name</th>
+                                        <th>Devotee's Name</th>
                                         <th>Date</th>
                                         <th></th>
                                     </tr>
                                 </thead>
                             <tbody>
-                                {patients}
+                                {devotees}
                             </tbody>
                             </table>
                         </div>
@@ -96,8 +96,8 @@ const Patient = ({patient}) => {
     );
 };
 
-Patient.propTypes = {
-    patient: PropTypes.array.isRequired,
+Devotee.propTypes = {
+    devotee: PropTypes.array.isRequired,
 }
 
-export default connect(null)(Patient);
+export default connect(null)(Devotee);

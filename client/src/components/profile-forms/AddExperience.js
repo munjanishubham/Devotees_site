@@ -47,7 +47,7 @@ const AddExperience = ({addExperience, history}) => {
                                     <input 
                                         type="text" 
                                         className="form-control" 
-                                        placeholder="* Hospital"
+                                        placeholder="* Temple"
                                         name="medical"
                                         value={medical}
                                         onChange={e => onChange(e)}

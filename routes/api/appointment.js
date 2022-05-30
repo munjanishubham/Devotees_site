@@ -15,7 +15,7 @@ const Profile = require('../../models/Profile');
 // @access  Private
 router.post('/:pandit_id', [authUser,
     [
-        check('patientname', 'Patient name is required')
+        check('devoteename', 'Devotee name is required')
             .not()
             .isEmpty(),
         check('fathername', 'Father name is required')
@@ -65,9 +65,9 @@ router.post('/:pandit_id', [authUser,
         const create_id = new appointmentGenerator();
         const appointmentId = create_id.generate();
 
-        const newPatient = {
+        const newDevotee = {
             bookingId: appointmentId,
-            patientname: req.body.patientname,
+            devoteename: req.body.devoteename,
             fathername: req.body.fathername,
             status: req.body.status,
             age: req.body.age,
@@ -80,7 +80,7 @@ router.post('/:pandit_id', [authUser,
         
         const newAppointment = {
             bookingId: appointmentId,
-            patientname: req.body.patientname,
+            devoteename: req.body.devoteename,
             fathername: req.body.fathername,
             status: req.body.status,
             age: req.body.age,
@@ -91,7 +91,7 @@ router.post('/:pandit_id', [authUser,
             pandit: pandit.id
         }
 
-        profile.patients.unshift(newPatient);
+        profile.devotees.unshift(newDevotee);
 
         await profile.save();
 
@@ -129,11 +129,11 @@ router.post('/:pandit_id', [authUser,
 //         await user.save();
 
 //         // Get the remove index for pandit
-//         const removeIndexPandit = profile.patients
+//         const removeIndexPandit = profile.devotees
 //         .map(item => item.id)
 //         .indexOf(req.params.appointment_id);
         
-//         profile.patients.splice(removeIndexPandit, 1);
+//         profile.devotees.splice(removeIndexPandit, 1);
 //         await profile.save();
 
 //         // Return user

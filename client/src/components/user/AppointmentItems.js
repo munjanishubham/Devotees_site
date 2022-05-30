@@ -19,7 +19,7 @@ const AppointmentItems = ({
             </div>
             <div className="profile-details">
                 <div className="appointment-p profile-desc">
-                    <h2 className="profile-heading"><strong>{appnt.patientname}</strong></h2>
+                    <h2 className="profile-heading"><strong>{appnt.devoteename}</strong></h2>
                     <p className="profile-p"><strong>Father's name: {appnt.fathername}</strong></p>
                     <p className="profile-p2"><strong>Age: </strong>{appnt.age}</p>
                     <p className="profile-p2"><strong>Status: </strong>{appnt.status}</p>

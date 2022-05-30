@@ -80,8 +80,8 @@ const Profile = ({
                                             }
                                         </div>
                                     </div>
-                                    <div class="patient-review">
-                                            <h2 class="exp-common-heading">Patient Reviews</h2> 
+                                    <div class="devotee-review">
+                                            <h2 class="exp-common-heading">Devotee Reviews</h2> 
                                             { authUser.isUserAuthenticated ? 
                                                 (
                                                    <ReviewForm panditId={profileById.pandit._id} /> 

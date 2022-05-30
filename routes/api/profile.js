@@ -52,7 +52,7 @@ async (req, res) => {
         timing,
         bio,
         status,
-        specialists,
+        // specialists,
         ruppess,
         youtube,
         facebook,
@@ -69,7 +69,7 @@ async (req, res) => {
     if(timing) profileFields.timing = timing;
     if(bio) profileFields.bio = bio;
     if(status) profileFields.status = status;
-    if(specialists) profileFields.specialists = specialists;
+    // if(specialists) profileFields.specialists = specialists;
     if(ruppess) profileFields.ruppess = ruppess;
     
     //Build social objects
