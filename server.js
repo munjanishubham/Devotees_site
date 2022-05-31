@@ -6,6 +6,7 @@ const users = require('./routes/api/users');
 const authsUser = require('./routes/api/authUser');
 const profile = require('./routes/api/profile');
 const appointment = require('./routes/api/appointment');
+const path = require('path');
 
 const app = express();
 
@@ -21,7 +22,13 @@ mongoose
 //Init Middleware 
 app.use(express.json({ extended: false}));
 
-app.get('/', (req, res) => res.send("Welcome sohit kumar shivhare Dash"));
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
+// app.get('/', (req, res) => res.send("Welcome sohit kumar shivhare Dash"));
 
 // Use Routes
 app.use('/api/pandits', pandits);
