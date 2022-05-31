@@ -14,14 +14,14 @@ const db = require('./config/keys').mongoURI;
 
 // connect to MongoDB;
 mongoose
-    .connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+    .connect(process.env.MONGODB_URI || db, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
 
 //Init Middleware 
 app.use(express.json({ extended: false}));
 
-app.get('/', (req, res) => res.send("Welcome Jeevan Joti Dash"));
+app.get('/', (req, res) => res.send("Welcome sohit kumar shivhare Dash"));
 
 // Use Routes
 app.use('/api/pandits', pandits);
@@ -31,6 +31,10 @@ app.use('/api/authUser', authsUser);
 app.use('/api/profile', profile);
 app.use('/api/appointment', appointment);
 
+
+if(process.env.NODE_ENV ==='production') {
+    app.use(express.static('client/public'));
+}
 
 
 const port = process.env.PORT || 5000;
