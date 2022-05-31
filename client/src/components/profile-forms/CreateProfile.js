@@ -69,14 +69,14 @@ const CreateProfile = ({ createProfile, history }) => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="* Enter your status. eg. Professor, Senior Specalist etc."
+                    placeholder="* Enter your Pojas. eg. GaneshPuja, Satnarayan katha,annprasan,etc."
                     name="status"
                     value={status}
                     onChange={(e) => onChange(e)}
                     required
                   />
                   <small className="form-text text-muted">
-                    Give us an idea of where you are at in your career
+                    Give us an idea of which pojas that can be done by you.
                   </small>
                 </div>
                 <div className="form-group">
