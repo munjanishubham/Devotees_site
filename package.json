@@ -9,10 +9,10 @@
     "install-client":" cd client && npm install",
     "client": "npm start --prefix client",
     "heroku-postbuild":"npm run install-client && npm run client",
-    
+    "start": "node server.js",
     "server": "nodemon server.js",
     
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "munjani",
   "license": "ISC",
