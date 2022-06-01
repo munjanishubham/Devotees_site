@@ -21,7 +21,7 @@ const AppointmentItems = ({
                 <div className="appointment-p profile-desc">
                     <h2 className="profile-heading"><strong>{appnt.devoteename}</strong></h2>
                     <p className="profile-p"><strong>Location's name: {appnt.location}</strong></p>
-                    <p className="profile-p2"><strong>Age: </strong>{appnt.age}</p>
+                    <p className="profile-p2"><strong>Mobile No: </strong>{appnt.age}</p>
                     <p className="profile-p2"><strong>Status: </strong>{appnt.status}</p>
                     <p className="profile-p2"><strong>Date: </strong><Moment format='DD/MM/YYYY'>{appnt.date}</Moment></p>
                     <p className="profile-p2"><strong>Booking ID: </strong>{appnt.bookingId}</p>
