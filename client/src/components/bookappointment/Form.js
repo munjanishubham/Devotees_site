@@ -70,7 +70,7 @@ const Form = ({profile, panditId,history, addAppointment}) => {
                     <input 
                         type="text" 
                         className="form-control" 
-                        placeholder="* Age"
+                        placeholder="* Mobile No."
                         name="age" 
                         value={age} 
                         onChange={e => onChange(e)} />
