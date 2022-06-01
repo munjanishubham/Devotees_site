@@ -21,7 +21,7 @@ mongoose
 //Init Middleware 
 app.use(express.json({ extended: false}));
 
-app.get('/', (req, res) => res.send("Welcome Jeevan Joti Dash"));
+app.get('/', (req, res) => res.send("Welcome munjani"));
 
 // Use Routes
 app.use('/api/pandits', pandits);

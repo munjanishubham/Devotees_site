@@ -23,12 +23,12 @@ const Landing = ({isPanditAuthenticated, isUserAuthenticated}) => {
                     <div className="signup">
                         <div className="pandit-signup">
                             <h2 className=" item heading-sub"><strong>For Pandits</strong></h2>
-                            <p className="item description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel itaque quae delectus veritatis consequatur hic!</p>
+                            <p className="item description">Welcome pandit. Here you can register yourselves and can help the users</p>
                             <Link to="/registerPandit" type="button" className="item btn btn-info">Sign Up</Link>
                         </div>
                         <div className="user-signup">
                             <h2 className="item heading-sub"><strong>For Users</strong></h2>
-                            <p className="item special description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel itaque quae delectus veritatis consequatur hic!</p>
+                            <p className="item special description">Welcome user, let us help you for the auspicious program that you want to perform.</p>
                             <Link to="/registerUser" className="item btn btn-outline-info">Sign Up</Link>
                         </div>
                     </div>
