@@ -11,7 +11,7 @@ const Devotee = ({devotee}) => {
         <Fragment key={pat._id}>
             <h2 className="style-heading"><strong>{pat.devoteename}</strong></h2>
             <p className="profile-p"><strong>Location's name: {pat.location}</strong></p>
-            <p className="profile-p2"><strong>Age: </strong>{pat.age}</p>
+            <p className="profile-p2"><strong>Mobile No: </strong>{pat.mobile}</p>
             <p className="profile-p2"><strong>Status: </strong>{pat.status}</p>
             <p className="profile-p2"><strong>Date: </strong><Moment format='DD/MM/YYYY'>{pat.date}</Moment></p>
             <p className="profile-p2"><strong>Booking ID: </strong>{pat.bookingId}</p>

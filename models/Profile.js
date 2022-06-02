@@ -51,7 +51,7 @@ const ProfileSchema = new mongoose.Schema({
       status: {
         type: String,
       },
-      age: {
+      mobile: {
         type: Number,
       },
       date: {

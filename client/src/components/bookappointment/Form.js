@@ -10,7 +10,7 @@ const Form = ({profile, panditId,history, addAppointment}) => {
     const [formData, setFormData] = useState({
         devoteename: '',
         location: '',
-        age:'',
+        mobile:'',
         status:'',
         date:'',
         description:''
@@ -19,7 +19,7 @@ const Form = ({profile, panditId,history, addAppointment}) => {
     const {
         devoteename,
         location,
-        age,
+        mobile,
         status,
         date,
         description
@@ -71,8 +71,8 @@ const Form = ({profile, panditId,history, addAppointment}) => {
                         type="text" 
                         className="form-control" 
                         placeholder="* Mobile No."
-                        name="age" 
-                        value={age} 
+                        name="mobile" 
+                        value={mobile} 
                         onChange={e => onChange(e)} />
                 </div>
                 <div className="form-group">
